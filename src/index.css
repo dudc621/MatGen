@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Apple iOS 27 Liquid Glass Monochromatic Design System */
+  .liquid-glass-surface {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(32px) saturate(180%);
+    -webkit-backdrop-filter: blur(32px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 
+      0 24px 60px rgba(0, 0, 0, 0.5),
+      inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .liquid-glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 
+      0 12px 36px rgba(0, 0, 0, 0.35),
+      inset 0 1px 1.5px rgba(255, 255, 255, 0.35);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .liquid-glass-pill {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 
+      0 6px 24px rgba(0, 0, 0, 0.3),
+      inset 0 1px 1.5px rgba(255, 255, 255, 0.45);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .liquid-glass-pill:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow: 
+      0 10px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  }
+
+  .liquid-glass-pill:active {
+    transform: scale(0.96);
+  }
+
+  .liquid-glass-active {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.14) 100%) !important;
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    color: #ffffff !important;
+    box-shadow: 
+      0 8px 24px rgba(255, 255, 255, 0.18),
+      inset 0 1px 2px rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .liquid-glass-button {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    box-shadow: 
+      0 8px 26px rgba(0, 0, 0, 0.35),
+      inset 0 1px 1.5px rgba(255, 255, 255, 0.5);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .liquid-glass-button:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.12) 100%);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 
+      0 12px 36px rgba(0, 0, 0, 0.4),
+      inset 0 1px 2px rgba(255, 255, 255, 0.65);
+    transform: translateY(-1px);
+  }
+
+  .liquid-glass-button:active {
+    transform: scale(0.96);
+  }
+}
+
+/* iOS 27 Fluid Spring Keyframes */
+@keyframes ios-spring-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes ios-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes liquid-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-ios-spring {
+  animation: ios-spring-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-ios-fade {
+  animation: ios-fade 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
