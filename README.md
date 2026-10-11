@@ -2,7 +2,7 @@
 
 MatGen PBR est un studio moderne de génération et de calibration de textures PBR (Physically-Based Rendering) en temps réel. Importez n'importe quelle photographie ou texture et transformez-la instantanément en matériau 3D complet prêt pour les moteurs de jeux et logiciels 3D (Blender, Unreal Engine, Unity).
 
-## ✨ Fonctionnalités Clés
+##  Fonctionnalités Clés
 
 - **Conversion Photo vers PBR 100% Locale :**
   - Extraction de carte de normales (Normal Map) avec support OpenGL (+Y) et DirectX (-Y).
@@ -22,7 +22,7 @@ MatGen PBR est un studio moderne de génération et de calibration de textures P
   - Téléchargement individuel des cartes PNG.
   - Exportation en archives ZIP prêtes à l'emploi avec channel packing optimisé pour **Blender**, **Unreal Engine** (ORM) et **Unity** (Standard / URP).
 
-## 🚀 Démarrage Rapide
+##  Démarrage Rapide
 
 ### Prérequis
 - [Node.js](https://nodejs.org/) (version 18 ou supérieure)
@@ -44,7 +44,7 @@ npm run build
 npm start
 ```
 
-## ⚙️ Configuration Optionnelle
+##  Configuration Optionnelle
 
 L'application fonctionne de manière autonome en local sans clé d'API. Si vous souhaitez activer l'analyse IA via Google Gemini, vous pouvez créer un fichier `.env` à la racine :
 
@@ -53,5 +53,5 @@ GEMINI_API_KEY="votre_cle_api_ici"
 PORT=3000
 ```
 
-## 📄 Licence
+##  Licence
 Ce projet est open source et distribué sous licence MIT.
