@@ -1,0 +1,6 @@
+{
+  "name": "MatGen PBR",
+  "description": "Studio de création de textures 3D PBR assisté par IA avec bouclage sans couture (seamless tiling), extraction de cartes physiques et viewport 3D interactif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
